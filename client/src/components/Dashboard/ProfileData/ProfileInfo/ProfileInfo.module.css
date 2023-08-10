@@ -1,0 +1,46 @@
+.profile-info {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+.profile-info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background);
+  padding: 20px;
+  width: 28%;
+  margin: 0 10px 10px;
+}
+
+.friends {
+  color: hsl(208.7, 100%, 53.7%);
+}
+
+.posts {
+  color: hsl(120, 39.3%, 54.1%);
+}
+
+.profile-created-at {
+  color: hsl(35.2, 84.4%, 62.4%);
+}
+
+.pi-icon {
+  font-size: 2rem !important;
+}
+
+.pi-text {
+  margin-top: 15px;
+  color: var(--card-text);
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .profile-info-card {
+    padding: 15px;
+  }
+  .pi-text {
+    font-size: 0.8rem;
+  }
+}

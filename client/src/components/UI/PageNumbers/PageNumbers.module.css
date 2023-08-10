@@ -1,0 +1,38 @@
+.page-buttons {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+  transition: 700ms;
+}
+
+.page-button {
+  background-color: var(--background);
+  border: 1px solid var(--menu-navbar-border);
+  margin-left: -1px;
+  font-size: 1.1rem;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: 700ms;
+}
+
+.page-button:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.page-button:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.page-button:only-child {
+  border-radius: 5px;
+}
+
+.page-num {
+  background-color: white;
+  border: none;
+}
+
+.page-button-checked {
+  background-color: var(--logo-bright);
+  color: white;
+}

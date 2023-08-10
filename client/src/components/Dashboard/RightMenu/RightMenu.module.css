@@ -1,0 +1,23 @@
+.right-menu {
+  position: sticky;
+  top: 76px;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.rm-notification-wrapper {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.rm-hr {
+  border: none;
+  border-bottom: 1px solid var(--rm-hr);
+  width: 95%;
+}
+
+.no-noti {
+  font-size: 0.8rem;
+  color: var(--rm-no-noti-text);
+}

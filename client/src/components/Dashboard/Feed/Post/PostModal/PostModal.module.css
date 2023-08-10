@@ -1,0 +1,155 @@
+.post-wrapper-for-ref {
+  width: 50%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.post-upper {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  overflow-x: auto;
+}
+
+.post-profile-img {
+  min-width: 30px;
+  max-width: 30px;
+  min-height: 30px;
+  max-height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.post-name {
+  font-weight: 600;
+  margin-right: 5px;
+  color: var(--card-text);
+  cursor: pointer;
+}
+
+.post-time {
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: var(--post-sub-text);
+}
+
+.post-body {
+  padding-bottom: 10px;
+}
+
+.post-body-text {
+  font-weight: 400;
+  margin: 0;
+  white-space: pre-wrap;
+  color: var(--card-text);
+  width: 100%;
+}
+
+.post-read-more-less {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--post-sub-text);
+  cursor: pointer;
+}
+
+.img-video-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.post-img {
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.post-video {
+  max-width: 100%;
+  max-height: 350px;
+  border-radius: 15px;
+  border: none;
+}
+
+.post-like-comments {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-like {
+  display: flex;
+  align-items: center;
+}
+
+.post-like-icon {
+  font-size: 1.3rem !important;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 100ms !important;
+  color: var(--card-text);
+}
+
+.post-liked-icon {
+  color: hsl(208.7, 100%, 53.7%);
+}
+
+.post-like-icon:hover {
+  color: hsl(208.7, 100%, 53.7%);
+}
+
+.post-like-text {
+  font-size: 0.8rem;
+  color: var(--post-sub-text);
+}
+
+.post-comment-text {
+  font-size: 0.8rem;
+  color: var(--post-sub-text);
+}
+
+.post-modal-comments {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--menu-navbar-border);
+}
+
+.no-access-comments {
+  display: flex;
+  justify-content: center;
+  color: var(--card-text);
+  text-align: center;
+  margin: 15px 0 0 0;
+  font-size: 0.9rem;
+  background-color: rgba(255, 99, 71, 0.4);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 1350px) {
+  .post-wrapper-for-ref {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .post-wrapper-for-ref {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .post-body-text,
+  .post-name {
+    font-size: 0.8rem;
+  }
+
+  .post-time,
+  .post-like-text {
+    font-size: 0.7rem;
+  }
+}

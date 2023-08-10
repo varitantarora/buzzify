@@ -1,0 +1,121 @@
+.signup-wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  background-color: hsl(0, 0%, 96.5%);
+  background-attachment: fixed;
+}
+
+.signup-content-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.signup-left {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.signup-right {
+  width: 66%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 650px) {
+  .signup-wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .signup-content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .signup-left {
+    display: none;
+    width: 75%;
+    margin-top: 25px;
+    background-color: hsl(208.7, 100%, 53.7%);
+    border-radius: 15px 15px 0 0;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+  }
+  .signup-right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sl-add-pic {
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    margin-top: 15px;
+  }
+
+  .sl-preview-pic {
+    height: 4.9rem;
+    width: 4.9rem;
+  }
+
+  .sl-add-pic-icon {
+    height: 4.9rem;
+    width: 4.9rem;
+  }
+
+  .add-icon,
+  .remove-icon {
+    font-size: 1.8rem !important;
+    top: 3.5rem;
+    right: 0.3rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .sl-add-pic {
+    top: calc(50vh - 307px);
+  }
+
+  .sl-preview-pic {
+    height: 3.4rem;
+    width: 3.4rem;
+  }
+
+  .sl-add-pic-icon {
+    height: 3.4rem;
+    width: 3.4rem;
+  }
+
+  .add-icon,
+  .remove-icon {
+    font-size: 1.2rem !important;
+    top: 2.9rem;
+    right: 0.2rem;
+  }
+}
+
+@media only screen and (max-height: 550px) {
+  .sl-add-pic {
+    top: calc(50vh - 307px);
+  }
+
+  .signup-wrapper {
+    overflow-y: scroll;
+    align-items: flex-start;
+  }
+
+  .signup-left {
+    min-height: 100vh;
+    justify-content: end;
+  }
+}

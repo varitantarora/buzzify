@@ -1,0 +1,51 @@
+.dropdown {
+  position: absolute;
+  right: 10px;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background);
+  border-radius: 10px;
+  color: var(--navbar-profile-text);
+  border: 1px solid var(--menu-navbar-border);
+  animation: slide-down 200ms ease-out forwards;
+}
+
+.dropdown-options {
+  border-bottom: 1px solid var(--menu-navbar-border);
+}
+
+.dropdown-item {
+  padding: 15px 0 15px 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  transition: 200ms;
+}
+
+.dropdown-item:hover {
+  color: var(--logo-bright);
+  cursor: pointer;
+}
+
+.dropdown-item-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.dropdown-item-text {
+  font-family: "Poppins", sans serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

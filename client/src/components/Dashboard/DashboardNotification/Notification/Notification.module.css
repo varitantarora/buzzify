@@ -1,0 +1,93 @@
+.notification {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+.noti-img-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.noti-pic {
+  min-width: 50px;
+  max-width: 50px;
+  min-height: 50px;
+  max-height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.noti-name {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.noti-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.noti-accept-button {
+  padding: 0.5rem 1.3rem;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--rm-noti-button);
+  color: hsl(120, 39.3%, 54.1%);
+  font-weight: 500;
+  transition: 150ms;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.noti-accept-button:hover {
+  background-color: hsl(120, 39.3%, 54.1%);
+  color: white;
+}
+
+.noti-reject-button {
+  padding: 0.5rem 1.3rem;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--rm-noti-button);
+  color: hsl(1.7, 64.5%, 58%);
+  font-weight: 500;
+  transition: 150ms;
+  cursor: pointer;
+}
+
+.noti-reject-button:hover {
+  background-color: hsl(1.7, 64.5%, 58%);
+  color: white;
+}
+
+.notification-date {
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: var(--post-sub-text);
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 310px) {
+  .noti-pic {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  .noti-buttons {
+    flex-direction: column;
+  }
+
+  .noti-accept-button {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

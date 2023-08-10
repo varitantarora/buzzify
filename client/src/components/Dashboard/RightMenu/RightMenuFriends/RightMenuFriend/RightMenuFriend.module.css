@@ -1,0 +1,33 @@
+.rm-friend {
+  direction: ltr;
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  color: var(--card-text);
+  transition: 150ms;
+  padding-left: 10px;
+  margin-left: 3px;
+  /* overflow-x: auto; */
+}
+
+.rm-friend:hover {
+  background-color: var(--rm-friend-hover);
+  border-radius: 15px;
+  color: var(--rm-friend-text-hover);
+  cursor: pointer;
+}
+
+.rm-friend-img {
+  min-height: 30px;
+  max-height: 30px;
+  min-width: 30px;
+  max-width: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.rm-friend-text {
+  font-size: 0.9rem;
+  margin-right: 3px;
+}

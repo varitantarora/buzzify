@@ -1,0 +1,90 @@
+.rm-notification {
+  padding: 0 !important;
+  width: 95%;
+  overflow-x: auto;
+}
+
+.rm-profile-picture {
+  min-height: 30px;
+  max-height: 30px;
+  min-width: 30px;
+  max-width: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.rm-noti-text {
+  font-size: 1rem;
+  padding: 15px;
+}
+
+.rm-noti-name {
+  font-weight: 600;
+}
+
+.rm-noti-generic-text {
+  font-weight: 400;
+}
+
+.rm-noti-buttons {
+  padding: 0 15px 15px 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.rm-noti-accept {
+  padding: 0.5rem 1.3rem;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--rm-noti-button);
+  color: hsl(120, 39.3%, 54.1%);
+  font-weight: 500;
+  transition: 150ms;
+}
+
+.rm-noti-accept:hover {
+  background-color: hsl(120, 39.3%, 54.1%);
+  color: white;
+  cursor: pointer;
+}
+
+.rm-noti-reject {
+  padding: 0.5rem 1.3rem;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--rm-noti-button);
+  color: hsl(1.7, 64.5%, 58%);
+  font-weight: 500;
+  transition: 150ms;
+}
+
+.rm-noti-reject:hover {
+  background-color: hsl(1.7, 64.5%, 58%);
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1050px) {
+  .rm-noti-accept,
+  .rm-noti-reject {
+    padding: 0.5rem 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .rm-noti-accept,
+  .rm-noti-reject {
+    padding: 0.5rem 0.5rem;
+    border-radius: 7px;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .rm-noti-accept,
+  .rm-noti-reject {
+    font-size: 0.7rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 7px;
+  }
+}

@@ -1,0 +1,39 @@
+.profile-data {
+  flex: 9.5;
+  width: 100%;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.profile-user-posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  color: var(--card-text);
+}
+
+.edit-profile {
+  flex: 9.5;
+  width: 100%;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media only screen and (max-width: 1100px) {
+  .profile-user-posts {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .profile-user-posts {
+    width: 100%;
+  }
+}

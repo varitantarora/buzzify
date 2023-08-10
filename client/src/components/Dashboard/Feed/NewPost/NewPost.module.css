@@ -1,0 +1,151 @@
+.new-post {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 15px 0;
+}
+
+.new-post-upper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.new-post-profile-logo {
+  margin-right: 5px;
+  height: 30px;
+  min-width: 30px;
+  max-width: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.new-post-input {
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  width: calc(100% - 42px);
+  font-family: "Poppins", sans-serif;
+  resize: none;
+  background-color: var(--background);
+  color: var(--navbar-profile-text);
+  transition: 700ms;
+}
+
+.new-post-br {
+  border: none;
+  border-bottom: 1px solid var(--menu-navbar-border);
+  margin: 10px 0;
+  transition: 700ms;
+}
+
+.new-post-features {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.new-post-add-img {
+  display: flex;
+  align-items: center;
+}
+
+.new-post-add-img:hover {
+  cursor: pointer;
+}
+
+.video-insert {
+  margin-top: 15px;
+  max-width: 100%;
+  max-height: 350px;
+  border-radius: 15px;
+  border: none;
+}
+
+.share-post {
+  font-family: "Poppins", sans-serif;
+  padding: 0.5rem 0;
+  width: 100px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--share-button);
+  color: var(--share-button-text);
+  transition: 250ms;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.share-post:hover {
+  background-color: hsl(208.7, 100%, 53.7%);
+  color: var(--share-button-text-hover);
+  cursor: pointer;
+}
+
+.preview-img-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.preview-img {
+  margin-top: 15px;
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.remove-img-icon {
+  position: absolute;
+  top: 15px;
+  right: -1px;
+  font-size: 2rem !important;
+  transition: 200ms;
+  cursor: pointer;
+  background-color: var(--background);
+  border-radius: 0 0 0 10px;
+  transition: 200ms;
+}
+
+.remove-img-icon:hover {
+  color: tomato;
+}
+
+.file-error {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.file-error-text {
+  font-size: 0.9rem;
+  color: tomato;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 650px) {
+  .new-post-input {
+    font-size: 0.9rem;
+  }
+  .new-post-add-img-text {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .new-post-input {
+    font-size: 0.75rem;
+  }
+
+  .file-error-text {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .new-post-add-img-text {
+    font-size: 0.65rem;
+  }
+}

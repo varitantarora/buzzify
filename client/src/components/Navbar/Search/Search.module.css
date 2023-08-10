@@ -1,0 +1,114 @@
+.navbar-search {
+  display: flex;
+  align-items: center;
+  padding: 5px 8px;
+  border: 1px solid var(--menu-navbar-border);
+  border-radius: 10px;
+  width: 70%;
+  position: relative;
+  background-color: var(--background-search-input);
+  transition: 700ms;
+}
+
+.navbar-search-text {
+  border-radius: 10px 10px 0 0;
+}
+
+.search-icon {
+  font-size: 1.1rem !important;
+  color: var(--navbar-features);
+}
+
+.search-input {
+  width: 90%;
+  border: none;
+  padding: 5px;
+  color: var(--search-blur-text);
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  background-color: var(--background-search-input);
+  transition: 700ms;
+}
+
+.search-input:focus {
+  outline: none;
+  color: var(--navbar-features);
+}
+
+.search-input::placeholder {
+  color: var(--search-blur-text);
+}
+
+.search-results {
+  border: 1px solid var(--menu-navbar-border);
+  border-top: none;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  top: 41.75px;
+  left: -1px;
+}
+
+.search-users {
+  color: var(--card-text);
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--background-search-input);
+  border-bottom: 1px solid var(--menu-navbar-border);
+  cursor: pointer;
+  transition: 200ms;
+  overflow-x: auto;
+}
+
+::-webkit-scrollbar {
+  height: 3px;
+}
+
+.search-users:hover {
+  background-color: var(--menu-navbar-border);
+}
+
+.search-pic {
+  min-width: 30px;
+  max-width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  object-fit: cover;
+  margin: 10px 10px;
+}
+
+.search-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.search-firstname {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.search-lastname {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.search-expend {
+  color: var(--card-text);
+  text-align: center;
+  font-size: 0.7rem;
+  margin: 0;
+  padding: 0.5rem;
+  border-radius: 0 0 10px 10px;
+  background-color: var(--background-search-input);
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.search-expend:hover {
+  background-color: var(--menu-navbar-border);
+}

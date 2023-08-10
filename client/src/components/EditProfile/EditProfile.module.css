@@ -1,0 +1,282 @@
+.edit-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+}
+
+.edit-form {
+  width: calc(100% - 100px);
+  min-height: calc(100% - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: var(--background);
+  padding: 25px;
+  margin: 25px 0;
+  border-radius: 15px;
+  box-shadow: var(--card-shadow);
+  transition: 700ms;
+}
+
+.profile-cover-wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  margin: 25px 0 20px 0;
+}
+
+.edit-text {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-right: 15px;
+  color: var(--card-text);
+}
+
+.profile-picture {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+.profile-pic {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.edit-firstname-lastname {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.edit-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--background-search-input);
+  border: 1px solid var(--menu-navbar-border);
+  padding: 5px;
+  outline: none;
+  font-size: 0.9rem;
+  width: 60%;
+  font-family: "Poppins", sans-serif;
+  color: var(--card-text);
+  transition: 700ms;
+}
+
+.edit-input-invalid {
+  border-bottom: 1px solid var(--badge);
+  color: var(--badge);
+}
+
+.edit-country-city-wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.edit-country-city {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.edit-input-country-city {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--background-search-input);
+  border: 1px solid var(--menu-navbar-border);
+  padding: 5px;
+  outline: none;
+  font-size: 0.9rem;
+  width: 98%;
+  font-family: "Poppins", sans-serif;
+  color: var(--card-text);
+}
+
+.edit-input-country-list {
+  background-color: red;
+}
+
+.disabled {
+  opacity: 50%;
+}
+
+.msg-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.success-msg {
+  background-color: rgb(226, 255, 226);
+  border: 1px solid hsl(120, 39.3%, 54.1%);
+  border-radius: 10px;
+  color: hsl(120, 39.3%, 54.1%);
+  font-size: 0.9rem;
+  padding: 3px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 5px;
+}
+
+.error-msg {
+  text-align: center;
+  background-color: pink;
+  border: 1px solid red;
+  border-radius: 10px;
+  color: red;
+  font-size: 0.9rem;
+  padding: 3px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 5px;
+}
+
+.edit-buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 70px 0 25px 0;
+}
+
+.edit-save-btn {
+  width: 25%;
+  margin-right: 25px;
+  background-color: var(--save-button);
+  border: 1px solid var(--save-button);
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 200ms;
+  font-size: 0.9rem;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.edit-save-btn:hover {
+  background-color: var(--save-button-hover);
+  border: 1px solid var(--save-button-hover);
+}
+
+.edit-save-btn:disabled {
+  opacity: 50%;
+}
+
+.edit-cancel-btn {
+  width: 25%;
+  background-color: var(--cancel-button);
+  border: 1px solid var(--cancel-button-border);
+  border-radius: 10px;
+  color: var(--cancel-button-text);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 200ms;
+  font-size: 0.9rem;
+  height: 40px;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.edit-cancel-btn:hover {
+  background-color: var(--cancel-button-hover);
+  border: 1px solid var(--cancel-button-border);
+  color: var(--cancel-button-text-hover);
+}
+
+@media only screen and (max-width: 1150px) {
+  .success-msg,
+  .error-msg {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .edit-form {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: calc(100% - 70px);
+    min-height: calc(100% - 70px);
+  }
+
+  .profile-picture,
+  .profile-cover-wrapper,
+  .edit-firstname-lastname,
+  .edit-firstname,
+  .edit-country-city-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-cover-wrapper {
+    margin-top: 0;
+  }
+
+  .profile-pic,
+  .cover-pic {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .edit-input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .edit-country-city,
+  .edit-input-country-city {
+    width: 100%;
+  }
+
+  .msg-wrapper {
+    margin: 0;
+  }
+
+  .success-msg,
+  .error-msg {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .edit-buttons-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .edit-save-btn,
+  .edit-cancel-btn {
+    width: 100%;
+  }
+
+  .edit-save-btn {
+    margin: 0 0 15px;
+  }
+}

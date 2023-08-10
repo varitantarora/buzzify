@@ -1,0 +1,63 @@
+.navbar-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  height: 60px;
+}
+
+.navbar-profile-content {
+  border-left: 1px solid var(--menu-navbar-border);
+    transition: 700ms;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 18.2px;
+}
+
+.navbar-profile-pic {
+  height: 30px;
+  min-width: 30px;
+  max-width: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.navbar-profile-icon {
+  font-size: 1.9rem !important;
+  color: var(--navbar-features);
+}
+
+.navbar-profile:hover {
+  padding-top: 3px;
+  height: 55.5px;
+  border-bottom: 3px solid var(--logo-bright);
+  cursor: pointer;
+}
+
+.navbar-profile-focus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  height: 55.5px;
+  background-color: var(--background);
+  outline: none;
+  padding-top: 3px;
+  border-bottom: 3px solid var(--logo-bright);
+  cursor: pointer;
+}
+
+.navbar-profile-focus > .navbar-profile-icon {
+  color: var(--navbar-icon-focus);
+}
+
+.navbar-profile-name {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-left: 10px;
+  color: var(--navbar-profile-text);
+}

@@ -1,0 +1,247 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid var(--menu-navbar-border);
+  position: sticky;
+  top: 0;
+  height: 60px;
+  z-index: 50;
+  background-color: var(--background);
+  transition: 700ms;
+}
+
+.navbar-mobile-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid var(--menu-navbar-border);
+  position: sticky;
+  top: 0;
+  background-color: var(--background);
+  height: 60px;
+  z-index: 50;
+}
+
+.logo {
+  flex: 4;
+}
+
+.navbar-logo {
+  display: inline;
+  font-family: "Poppins", sans-serif;
+  color: var(--logo-bright);
+  font-weight: 900;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.logo-span {
+  font-family: "Poppins", sans-serif;
+  color: var(--logo-dark);
+}
+
+.search {
+  flex: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-features {
+  flex: 4;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar-dark-mode-toggle {
+  padding: 18.2px 18.2px 11.2px 18.2px;
+}
+
+.navbar-dark-mode-toggle-mobile {
+  padding: 20.2px 13.2px 15.2px 18.2px;
+}
+
+.navbar-features-icon {
+  font-size: 1.6rem !important;
+  color: var(--navbar-features);
+  padding: 18.2px;
+}
+
+.navbar-features-icon:hover {
+  padding-bottom: 15.2px;
+  border-bottom: 3px solid var(--logo-bright);
+  cursor: pointer;
+}
+
+.navbar-features-icon-focus {
+  font-size: 1.6rem !important;
+  color: var(--navbar-features);
+  padding: 18.2px;
+  padding-bottom: 15.2px;
+  border-bottom: 3px solid var(--logo-bright);
+  cursor: pointer;
+  color: var(--logo-bright);
+}
+
+.notification-badge {
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 0.6rem;
+  color: white;
+  background-color: var(--badge);
+  padding: 4px 7px;
+  border-radius: 50%;
+  border: 2px solid var(--background);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 61px;
+  right: 10px;
+  min-width: 250px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mm-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18.2px 0 18.2px 8px;
+  color: var(--navbar-profile-text);
+}
+
+.mm-icon {
+  font-size: 1.8rem;
+}
+
+.navber-sign-buttons {
+  margin-right: 1rem;
+}
+
+.navber-signin-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--logo-dark);
+  font-family: "Poppins", sans-serif;
+  margin-right: 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.navber-signup-btn {
+  background-color: var(--logo-bright);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.navber-signup-btn:hover {
+  background-color: var(--navbar-signup-hover);
+}
+
+@media only screen and (max-width: 750px) {
+  .navbar-features {
+    display: none;
+  }
+
+  .mobile-menu {
+    position: absolute;
+    display: flex;
+    right: 25px;
+    align-items: center;
+  }
+
+  .search {
+    display: none;
+  }
+
+  /* .logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-logo {
+    margin-left: 0;
+  } */
+
+  .navbar-mobile-menu {
+    border-bottom: 1px solid var(--background);
+  }
+
+  .navbar-features-icon {
+    font-size: 1.3rem !important;
+    padding: 0 7px;
+  }
+
+  .navbar-features-icon:hover {
+    padding: 0 7px;
+    border-bottom: none;
+  }
+
+  .navbar-features-icon-focus {
+    font-size: 1.3rem !important;
+    padding: 0 7px;
+    /* padding: 18.2px 8px 18.2px; */
+    border-bottom: none;
+    /* padding-bottom: 15.2px; */
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .navber-signin-btn,
+  .navber-signup-btn {
+    font-size: 0.7rem;
+  }
+
+  .navber-signin-btn {
+    margin-right: 0.5rem;
+  }
+
+  .navbar-features-icon {
+    padding: 0 4px;
+  }
+
+  .navbar-features-icon:hover {
+    padding: 0 4px;
+  }
+
+  .mm-button {
+    padding-left: 4px;
+  }
+
+  .mm-icon {
+    font-size: 1.5rem !important;
+  }
+
+  .navbar-features-icon-focus {
+    /* font-size: 1.2rem !important; */
+    padding: 0 4px;
+  }
+
+  .navbar-dark-mode-toggle-mobile {
+    padding: 6px 4px 0 0;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .navbar-logo {
+    font-size: 1.4rem;
+  }
+}
+
+/* hsl(206.7, 33.3%, 94.7% */

@@ -1,0 +1,160 @@
+.profile-data {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.profile-images {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 370px;
+  width: 100%;
+}
+
+.edit-button-div {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-profile-button {
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+  padding: 8px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+  cursor: pointer;
+  color: hsl(220.3, 62.5%, 22%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-profile-button:hover {
+  color: hsl(208.7, 100%, 53.7%);
+}
+
+.profile-cover {
+  height: 250px;
+  max-width: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.profile-img-text {
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  color: var(--card-text);
+}
+
+.profile-pic {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid var(--background-feed);
+  margin-right: 10px;
+}
+
+.profile-name-city {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 !important;
+}
+
+.profile-city {
+  font-size: 1rem;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.stats-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.stats-buttons:first-child {
+  margin-bottom: 10px;
+}
+
+.show-stats-button {
+  padding: 0.5rem 1.3rem;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--background);
+  color: var(--card-text);
+  font-weight: 500;
+  transition: 150ms;
+}
+
+.show-stats-button:hover {
+  background-color: var(--navbar-signup-hover);
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1100px) {
+  .profile-images {
+    height: 300px;
+  }
+  .profile-cover {
+    height: 200px;
+  }
+
+  .profile-img-text {
+    top: 175px;
+  }
+
+  .profile-pic {
+    height: 100px;
+    width: 100px;
+  }
+
+  .profile-name {
+    font-size: 1.2rem;
+  }
+
+  .profile-city {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .profile-pic {
+    margin-right: 0;
+  }
+
+  .profile-img-text {
+    flex-direction: column;
+    top: 125px;
+    left: 0;
+    right: 0;
+    align-items: center;
+  }
+
+  .profile-name-city {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
